@@ -1,39 +1,53 @@
-Algoritmo "calculadora"
+Algoritmo "semnome"
 // Disciplina   : [Linguagem e Lógica de Programação]
-// Descrição   : Calculadora
+// Professor   : Thalita
+// Descrição   : Uma calculadora com menu
 // Autor(a)    : Cauã Thurler
-// Data atual  : 02/05/2022
+// Data atual  : 07/05/2022
 Var
-   valor1, valor2, S, r:real
-   operacao, sair:caracter
+   X, Y, resultado: real
+   op: inteiro
+   sair: caracter
+
+
 Inicio
 
-            Repita
-            S <- 0
-            escreva("Digite o primeiro número: ")
-            leia(valor1)
-            escreva("Digite a operacao ( + - * / ): ")
-            leia(operacao)
-            escreva ("Digite o segundo número: ")
-            leia(valor2)
+   Repita
+   escreval()
+   escreval("* CALCULADORA *")
+   escreval()
+   escreval("Digite dois valores")
+   leia(X, Y)
+   escreval()
+   escreval(" 1 - soma")
+   escreval(" 2 - subtração")
+   escreval(" 3 - multiplicação")
+   escreval(" 4 - divisão")
+   escreval ("Escolha a opção:[1] a [4]")
+   leia(op)
+   escreval()
 
-            escolha operacao
-            caso "+"
-               r <- valor1 + valor2
-            caso "-"
-               r <- valor1 - valor2
-            caso "*"
-               r <- valor1 * valor2
-            caso "/"
-               r <- valor1 / valor2
+   escolha op
+     caso 1
+        resultado <- X + Y
+        escreval(X, " + ", Y, " = ", resultado)
+     caso 2
+        resultado <- X - Y
+        escreval(X, " - ", Y, " = ", resultado)
+     caso 3
+        resultado <- X * Y
+        escreval(X, " * ", Y, " = ", resultado)
+     caso 4
+     Se Y = 0 entao
+         escreval("Divisão por zero")
+         fimalgoritmo
+     fimse
+        resultado <- X / Y
+        escreval(X, " / ", Y, " = ", resultado)
+    fimescolha
 
-            fimescolha
-
-            limpatela()
-            escreval(valor1, " ", operacao," ", valor2, " = ",r)
-
-            escreval ("Deseja realizar outra operação? (sim/nao) ")
-            leia(sair)
-     Ate(sair = "nao")
+        escreval("Deseja sair ou voltar ao menu? sair/voltar")
+        leia(sair)
+        Ate(sair = "sair")
+        escreval()
 fimalgoritmo
-Fimalgoritmo
