@@ -1,0 +1,25 @@
+body{
+    background-color: white;
+   
+}
+
+table{
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    width: 600px;
+    height: 400px;
+   
+}
+
+#header-box{
+    background-color: rgb(40, 119, 40);
+    height: 15%;
+    color: white;
+}
+
+#nome-box{
+    background-color: rgb(40, 119, 40);
+    height: 15%;
+    color: white;
+}
