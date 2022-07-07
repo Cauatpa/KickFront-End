@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+</head>
+<body style="background-color: black;">
+    <script>
+        const jogador = prompt("Qual seu nome jogador?")
+        let op = 10
+        let cont = 0
+        let pontuacao = 0
+        let respostaCa
+        quiz(op)
+
+        function quiz(op){
+            while(op != 0){
+            op = parseInt(prompt("Qual tema vcê deseja jogar? \n 1 - One Piece \n 2 - Berserker \n 3 - Boku No Hero \n 0 - Sair"))
+                switch(op){
+                    case 1:
+                        resposta = prompt("O Rei dos piratas foi o homem conhecido como Gol D. Roger? V ou F?")
+                        if(resposta == "v"){
+                            pontuacao++
+                        }else{
+                            alert("resposta erradissimá")
+                        }
+                        resposta = prompt("Luffy será o Rei do piratas? V ou F?")
+                        if(resposta == "v"){
+                            pontuacao++
+                        }else{
+                            alert("resposta erradissimá, logico que ele vai ser.")
+                        }
+                        resposta = prompt("O Akaino é gente boa? V ou F?")
+                        if(resposta == "f"){
+                            pontuacao++
+                        }else{
+                            alert("resposta erradissimá, mo cuzao q existe mano.")
+                        }
+                        alert(`${jogador}, vc fez ${pontuacao} pontos`)
+                        pontuacao = 0
+                    break
+
+                    case 2:
+                        resposta = prompt("O Griffith é um belo desgraçado? V ou F?")
+                            if(resposta == "v"){
+                                pontuacao++
+                            }else{
+                                alert("resposta erradissimá")
+                            }
+                            resposta = prompt("O Guts ta morrendo? V ou F?")
+                            if(resposta == "v"){
+                                pontuacao++
+                            }else{
+                                alert("resposta erradissimá, ele tá, infelizmente tá")
+                            }
+                            resposta = prompt("Berserke e o melhor mangá? V ou F?")
+                            if(resposta == "v"){
+                                pontuacao++
+                            }else{
+                                alert("resposta erradissimá, ele é o melhor de todos")
+                            }
+                            alert(`${jogador}, vc fez ${pontuacao} pontos`)
+                            pontuacao = 0
+                    break
+
+                    case 3:
+                        resposta = prompt("O Kirishima é fraco? V ou F?")
+                        if(resposta == "f"){
+                            pontuacao++
+                        }else{
+                            alert("resposta erradissimá, o cara tem o poder de fica duro, como ele n é forte?")
+                        }
+                        resposta = prompt("O Midoriya é um bom protagonista? V ou F?")
+                        if(resposta == "f"){
+                            pontuacao++
+                        }else{
+                            alert("resposta erradissimá, o Bakugo e mais legal")
+                        }
+                        resposta = prompt("O Bakugo so apanha? V ou F?")
+                        if(resposta == "f"){
+                            pontuacao++
+                        }else{
+                            alert("resposta erradissimá")
+                        }
+                        alert(`${jogador}, vc fez ${pontuacao} pontos`)
+                        pontuacao = 0
+                    break
+
+                    case 0:
+                        alert("Até mais! Obrigado por jogar!!!")
+                        break
+                    default:
+                        alert("digite a opção certa")
+                        break
+                }
+            }
+        }
+    </script>
+</body>
+</html>
