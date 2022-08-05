@@ -1,0 +1,59 @@
+.bg{
+    background-color: #D4C3FF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23736ece' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%235c55a4' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%236570d5' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%2375519f' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23653781' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%234b62c0' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23704eab' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23863082' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%233571da' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23872385' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%233d4093' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%236e389a' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+}
+
+input[type=text], select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#cadastro label{
+    display: block;
+}
+
+.container{
+    width: 50%;
+    margin: auto;    
+    padding: 20px;
+    border-radius: 5px;
+}
+
+input[type=submit]{
+    width: 100px;
+    background-color: #955FFF;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: #7E3CFF;
+}
