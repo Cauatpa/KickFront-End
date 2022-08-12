@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: verdana, sans-serif;
+    margin: 0;
+
+    background-color: #FFFFFF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='54.2' stroke-opacity='0.68' %3E%3Ccircle fill='%23FFFFFF' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23eeeeee' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23dddddd' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23cdcdcd' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23bdbdbd' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23adadad' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%239d9d9d' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%238d8d8d' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%237e7e7e' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23707070' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23616161' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23535353' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23454545' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23383838' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%232b2b2b' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%231f1f1f' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23131313' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23000000' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.slides{
+    display: none;
+    margin-top: 10px;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.carrossel-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position:absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3 px 0;
+    user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px p p 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.numText{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.ponto{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-top: 8px;
+}
+
+.active, .ponto:hover{
+    background-color: #717171;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade{
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+@media only screen and (max-width: 300px){
+    .prev, .next, .text {font-size: 11px;}
+}
